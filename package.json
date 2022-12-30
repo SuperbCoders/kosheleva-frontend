@@ -8,7 +8,6 @@
         "build:styles": "gulp styles --production",
         "build:scripts": "gulp scripts --production",
         "build:images": "gulp images --production",
-        "build:webp": "gulp webp --production",
         "build:sprites": "gulp sprites --production",
         "build:fonts": "gulp fonts --production",
         "build:favicons": "gulp favicons --production",

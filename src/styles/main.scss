@@ -197,6 +197,11 @@ header, footer {
           display: none;
         }
       }
+
+      @include _576 {
+        max-width: none;
+        text-align: center;
+      }
     }
 
   }
@@ -260,6 +265,14 @@ header, footer {
       width: 321px;
       height: 326px;
       margin-bottom: 23px;
+    }
+
+    @include _576 {
+      max-width: none;
+      width: 100%;
+      object-fit: contain;
+      max-height: none;
+      height: auto;
     }
   }
 
@@ -539,6 +552,13 @@ header, footer {
         margin-right: 0;
         margin-bottom: 24px;
       }
+
+      @include _576 {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        max-height: none;
+      }
     }
 
     .text {
@@ -686,8 +706,10 @@ header, footer {
     }
 
     a {
-      @include _768 {
-
+      @include _576 {
+        flex-basis: 50%;
+        margin-right: 0;
+        text-align: center;
       }
     }
 
