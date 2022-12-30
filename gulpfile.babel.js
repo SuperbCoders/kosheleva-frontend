@@ -55,7 +55,8 @@ const requireDir = require("require-dir"),
         },
         gzip: {
             src: "./src/.htaccess",
-            dist: "./dist/"
+            dist: "./dist/",
+
         }
     };
 
