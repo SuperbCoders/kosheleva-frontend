@@ -117,6 +117,7 @@ header, footer {
   &__content {
     display: flex;
     align-items: flex-end;
+    gap: 30px;
 
     @include _1024 {
       flex-direction: column;
@@ -134,27 +135,18 @@ header, footer {
 
         color: #fff;
         font-weight: 700;
-        font-size: 50px;
-        line-height: 61px;
-        letter-spacing: 0.15em;
+        font-size: 28px;
         text-transform: uppercase;
 
-        &:first-child {
-          font-size: 90px;
-          line-height: 110px;
-          letter-spacing: 0.15em;
-
-          @include _1024 {
-            font-size: 36px;
-            line-height: 44px;
-          }
-        }
 
         &:last-child {
           margin-top: 7px;
+          font-size: 20px;
 
           @include _1024 {
-            font-size: 20px;
+
+            text-align: right;
+            font-size: 18px;
             line-height: 24.5px;
           }
 
@@ -219,11 +211,41 @@ header, footer {
   &__content {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 30px;
 
     @include _1024 {
       flex-direction: column;
       align-items: center;
 
+    }
+  }
+
+  .approach {
+    @include _1024 {
+      width: 100%;
+      max-width: 646px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 36.75px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      line-height: 28px;
+      font-size: 18px;
+
+      @include _1024 {
+        font-size: 16px;
+        line-height: 24px;
+        flex-direction: column;
+        align-items: center;
+
+      }
     }
   }
 
@@ -278,7 +300,7 @@ header, footer {
 
   .whale {
     position: absolute;
-    top: 59%;
+    top: 33%;
     right: 5%;
     width: 479px;
     height: 390px;
@@ -442,7 +464,7 @@ header, footer {
                 padding-bottom: 10px;
               }
 
-              &::after{
+              &::after {
                 transform: translateY(-50%) rotate(-180deg);
               }
             }
